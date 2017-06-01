@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://e.jikexueyuan.com/static/css/browser.css"/>
+    <title>3D云课温馨提示：您的浏览器需要更新才能访问哦 ( ^_^ )</title>
+    <style>
+        #browser{width:650px;height:320px;padding:60px 40px;background:#fff;border-radius:3px;position:absolute;left:50%;margin-left:-325px;top:50%;margin-top:-190px;z-index:7000}#browser .b-title{color:#35b558;font-size:20px;text-align:center}#browser .b-title strong{color:#35b558;font-size:24px;text-align:center}#browser p{color:#666;font-size:12px;line-height:22px;margin:30px 0 70px}#browser .downloading{text-align:center}#browser .downloading a{display:inline-block;margin:0 20px}#browser .downloading img{border:0}
+    </style>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+<div id='browser'>
+    <div class='b-title'>
+        使用一款<strong>优质浏览器，是学习</strong>的关键一步！
+    </div>
+    <p>您正在使用的浏览器内核版本过低，除了有可能遭受病毒与恶意软件的侵袭之外，也无法体验到最新互联网技术带来的优质显示与交互效果。本网站大量使用了HTML5与CSS3技术，为确保您能够体验到最佳的浏览效果，我们推荐您选择使用下列最新的优质浏览器：</p>
+    <div class='downloading'>
+        <a href='http://www.firefox.com.cn/download/' target='_blank'>
+            <img src='images/firefox.png' />
+        </a>
+        <a href='http://wirrorcdn.qiniudn.com/software/browser/ChromeStandaloneSetup.Win.38.0.2125.111.exe' target='_blank'>
+            <img src='images/chrome.png' />
+        </a>
+        <a href='http://windows.microsoft.com/zh-cn/internet-explorer/ie-11-worldwide-languages/' target='_blank'>
+            <img src='images/ie.png' />
+        </a>
+        <a href='http://support.apple.com/kb/DL1531' target='_blank'>
+            <img src='images/safari.png' />
+        </a>
+    </div>
+</div>
+<script>
+    var _vds = _vds || [];
+window._vds = _vds;
+(function() {
+    _vds.push(['setAccountId', 'aacd01fff9535e79']);
+
+    var jkuid = new RegExp("(^| )uid=([^;]*)(;|$)");
+    var uidVal = 0;
+    if (document.cookie.match(jkuid) && document.cookie.match(jkuid)[2]) {
+        uidVal = document.cookie.match(jkuid)[2];
+        _vds.push(['setCS1', 'uid', uidVal]);
+    }
+
+
+    (function() {
+        var vds = document.createElement('script');
+        vds.type = 'text/javascript';
+        vds.async = true;
+        vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(vds, s);
+    })();
+
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-50413628-1', 'auto');
+    ga('send', 'pageview');
+    ga('set', 'userId', uidVal);
+
+})();
+</script>
+</body>
+</html>
